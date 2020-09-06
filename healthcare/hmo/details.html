@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#124735" />
+    <title>Rampver Financials | Healthcare Details</title>
+    <meta name="title" content="Rampver Financials | Product Details" />
+    <meta name="description" content="Find the best HMO Plans with Rampver Financials. " />
+    <meta property="og:title" content=" Affordable HMO Plans | Rampver Financials" />
+    <meta property="og:description" content="Find the best HMO Plans with Rampver." />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="https://i.ibb.co/3k60mhS/specific.png" />
+    <meta property="og:site_name" content="Rampver Financials" />
+    <meta property="og:type" content="article" />
+    <link rel="icon" href="../../img/favicon.png" type="image/png" sizes="16x20" />
+    <link rel="stylesheet" href="../../dependencies/bootstrap.min.css" />
+    <link rel="stylesheet" src="../../styles/style.css" href="../../styles/style.css" />
+    <script type="text/javascript" src="../../dependencies/jquery.min.js"></script>
+</head>
+
+<body data-instant-intensity="viewport">
+    <!-- navbar -->
+    <div id="navbarSet"></div>
+    <script src="../../components/navbar.js"></script>
+    <!-- navbar -->
+    <br />
+
+    <div class="container px-3 mt-3">
+        <div class="row">
+            <div class="col-lg-8 col-md-6 col-sm-12">
+                <br />
+                <p class="text-center">
+                    <img id="imageURL" class="lazyload detailimg rounded" style="max-width: 500px" />
+                </p>
+                <br>
+                <h4 class="claimHeader text-center font-weight-bolder px-1" id="planName"></h4>
+                <br>
+
+                <div>
+                    <table class="table table-hover">
+                        <tr>
+                            <td class="claimHeader">Provider</td>
+                            <td id="provider"></td>
+                        </tr>
+                        <tr>
+                            <td class="claimHeader">Benefit Limit</td>
+                            <td id="benefitLimit"></td>
+                        </tr>
+                        <tr>
+                            <td class="claimHeader">Room and Board</td>
+                            <td id="roomAndBoard"></td>
+                        </tr>
+                        <tr>
+                            <td class="claimHeader">Limit Type</td>
+                            <td id="limitType"></td>
+                        </tr>
+                        <tr>
+                            <td class="claimHeader">Eligible Age</td>
+                            <td id="age"></td>
+                        </tr>
+                        <tr>
+                            <td class="claimHeader">Life Insurance</td>
+                            <td id="lifeInsurance"></td>
+                        </tr>
+                        <tr>
+                            <td class="claimHeader">Accidental Death Benefit</td>
+                            <td id="adb"></td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <br>
+                <h5 class="claimHeader text-left">Description</h5>
+                <hr>
+                <p class="text-left" id="description"></p>
+                <br>
+                <!-- Hospitals -->
+                <div>
+                    <h5 class="claimHeader text-left">Hospital Access</h5>
+                    <hr>
+                    <p class="text-justify" id="hospitalAccess"></p>
+                    <a href="" class="btn rfbtn text-white btn-sm" id="hospitalNetwork" target="_blank">See Full
+                        Hospital Network</a>
+                    <br>
+                </div>
+                <!-- Hospitals -->
+                <br>
+                <!-- Hospitals -->
+                <div class="mt-2">
+                    <h5 class="claimHeader text-left">Major Hospitals</h5>
+                    <hr>
+                    <p class="text-justify" id="topHospitals"></p>
+                    <br>
+                </div>
+                <!-- Hospitals -->
+                <!-- Emergency Non Accredited -->
+                <div id="emergencyNonaccreditedCont">
+                    <h5 class="claimHeader text-left">Emergency care in Non-Accredited Hospitals</h5>
+                    <hr>
+                    <p class="text-justify" id="emergencyNonaccredited"></p>
+                    <br>
+                </div>
+                <!-- Emergency Non Accredited -->
+                <!-- preexistingCoverage -->
+                <div id="preexistingCoverageCont">
+                    <h5 class="claimHeader text-left">Coverage for Pre-Existing Conditions</h5>
+                    <hr>
+                    <p class="text-justify" id="preexistingCoverage"></p>
+                    <br>
+                </div>
+                <!-- preexistingCoverage -->
+                <!-- congenitalCoverage -->
+                <div id="congenitalCoverageCont">
+                    <h5 class="claimHeader text-left">Coverage for Congenital Conditions</h5>
+                    <hr>
+                    <p class="text-justify" id="congenitalCoverage"></p>
+                    <br>
+                </div>
+                <!-- congenitalCoverage -->
+                <!-- ape -->
+                <div id="apeCont">
+                    <h5 class="claimHeader text-left">Annual Physical Exam Package</h5>
+                    <hr>
+                    <p class="text-justify" id="ape"></p>
+                    <br>
+                </div>
+                <!-- ape -->
+                <!-- ecu -->
+                <div id="ecuCont">
+                    <h5 class="claimHeader text-left">Executive Checkup Package</h5>
+                    <hr>
+                    <p class="text-justify" id="ecu"></p>
+                    <br>
+                </div>
+                <!--ecu -->
+                <!-- ambulance -->
+                <div id="ambulanceCont">
+                    <h5 class="claimHeader text-left">Ambulance Service</h5>
+                    <hr>
+                    <p class="text-justify" id="ambulance"></p>
+                    <br>
+                </div>
+                <!--ambulance -->
+                <!-- travelAssist -->
+                <div id="travelAssistCont">
+                    <h5 class="claimHeader text-left">Travel Assist</h5>
+                    <hr>
+                    <p class="text-justify" id="travelAssist"></p>
+                    <br>
+                </div>
+                <!--travelAssist -->
+                <!-- dentalBenefits -->
+                <div id="dentalBenefitsCont">
+                    <h5 class="claimHeader text-left">Dental Benefits</h5>
+                    <hr>
+                    <p class="text-justify" id="dentalBenefits"></p>
+                    <br>
+                </div>
+                <!--dental Benefits -->
+                <!-- otherBenefits -->
+                <div id="otherBenefitsCont">
+                    <h5 class="claimHeader text-left">Other Benefits</h5>
+                    <hr>
+                    <p class="text-justify" id="otherBenefits"></p>
+                    <br>
+                </div>
+                <!--otherBenefits -->
+                <br>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- INQUIRE BUTTON -->
+    <!-- <div id="fundInqBtnSet"></div>
+    <script src="../../components/fundInqBtn.js"></script> -->
+    <!-- INQUIRE BUTTON -->
+
+    <!-- footer -->
+    <div id="footer"></div>
+    <script src="../../components/footer.js"></script>
+    <!-- footer -->
+
+    <!-- cookie consent -->
+    <div id="cookieconsent"></div>
+    <link rel="stylesheet" href="../../dependencies/cookieconsent.min.css" />
+    <script src="../../dependencies/cookieconsent.min.js"></script>
+    <script src="../../js/cookieconsent.js"></script>
+    <!-- cookie consent -->
+
+    <script src="./parser.js"></script>
+    <script src="../../dependencies/lazysizes.min.js"></script>
+
+    <!-- share on texthighlight -->
+    <script src="../../dependencies/sharect/sharect.js"></script>
+    <script src="../../dependencies/sharect/sharectconfig.js"></script>
+    <!-- share on texthighlight -->
+
+    <script src="../../dependencies/popper.min.js"></script>
+    <script src="../../dependencies/bootstrap.min.js"></script>
+    <script src="../../dependencies/font-awesome.js"></script>
+    <script src="//instant.page/5.1.0" type="module"
+        integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+</body>
+
+</html>
