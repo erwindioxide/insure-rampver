@@ -125,15 +125,13 @@ function dataFill(json) {
 	if (travelAssist == "Not Applicable") {
 		document.getElementById("travelAssistCont").classList.add("d-none");
 	} else {
-		// let travelAssistList = travelAssist.split(";");
-		// for (let i = 0; i < travelAssistList.length; i++) {
-		// 	let li = document.createElement('li');
-		// 	li.className = "mb-1 text-left";
-		// 	li.textContent = travelAssistList[i];
-		// 	document.getElementById('travelAssist').appendChild(li);
-		// };
-		document.getElementById('travelAssist').innerHTML = json[0].travelAssist;
-
+		let travelAssistList = travelAssist.split(";");
+		for (let i = 0; i < travelAssistList.length; i++) {
+			let li = document.createElement('li');
+			li.className = "mb-1 text-left";
+			li.textContent = travelAssistList[i];
+			document.getElementById('travelAssist').appendChild(li);
+		};
 	};
 
 	// split and feed otherBenefits list, hide if none
@@ -173,5 +171,4 @@ let output = fetch(api)
 	.then((json) => {
 		// this.dataFill(json);
 		this.dataFill(json);
-		console.log(json);
 	})

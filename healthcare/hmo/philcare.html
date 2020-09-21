@@ -38,34 +38,17 @@
 		<script src="../../components/shareQR.js"></script>
 		<!-- share via QR Code -->
 
-		<div class="row mt-4" data-stein-url="https://api.steinhq.com/v1/storages/5f4750095d3cdc44fcd7d3a6/philcare">
-			<div class="col-lg-4 col-md-6 mb-3">
-				<div class="card h-100">
-					<div class="text-center">
-						<img data-src="{{imageURL}}" alt="{{planName}}" class="previewimg lazyload mt-4 px-4">
-					</div>
-					<h5 class="text-center mb-2 claimHeader mt-3 mx-2"><a href="" class="claimHeader">{{planName}}</a>
-					</h5>
-					<h6 class="text-left mb-2 claimHeader mt-3 ml-3 mx-2"><a href=""
-							class="claimHeader">{{provider}}</a>
-					</h6>
-					<div class="my-1 mx-3 mt-2">
-						<p class="text-justify"><small>{{description}}</small></p>
-						<div class="text-center mb-3 mt-3">
-							<a class="btn px-4 text-white rfbtn btn-block"
-								href="./details.html?provider={{provider}}&id={{id}}">Learn More!</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<!-- steins gallery -->
+		<div id='productGallery'></div>
+		<script src="./productGalleryItem.js"></script>
+		<script src='../../dependencies/stein-expedite.js'></script>
+		<!-- steins gallery -->
 	</div>
 
 	<!-- footer -->
 	<div id="footer"></div>
 	<script src="../../components/footer.js"></script>
 	<!-- footer -->
-	<script src="https://unpkg.com/stein-expedite@0.0.4/dist/index.js"></script>
 	<script src="../../js/validator.js"></script>
 	<script src="../../dependencies/lazysizes.min.js"></script>
 
