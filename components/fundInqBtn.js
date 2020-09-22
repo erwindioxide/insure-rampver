@@ -3,8 +3,8 @@ const fundInq = document.createElement('div');
 
 // create the sticky btn and modal component
 fundInq.innerHTML = `
-<button id="sticky" class="btn rfbtn text-white mt-3 btn-lg" data-toggle="modal" data-target="#inquireform" style="z-index: 5;">
-Start Investing!
+<button id="sticky" class="btn rfbtn text-white mt-3" data-toggle="modal" data-target="#inquireform" style="z-index: 5;">
+Ask for Proposal
 </button>
 <div class="modal fade" id="inquireform" role="dialog">
 <div class="modal-dialog" role="document">
